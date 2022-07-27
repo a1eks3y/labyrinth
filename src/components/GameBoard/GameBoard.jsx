@@ -1,6 +1,7 @@
 import React from 'react'
 import GameBoardCell from './GameBoardCell/GameBoardCell'
 import s from './GameBoard.module.css'
+import StartNewGameModal from '../StartNewGameModal/StartNewGameModal'
 
 
 const GameBoard = () => {
@@ -15,6 +16,7 @@ const GameBoard = () => {
             <GameBoardCell x={0} y={2}/>
             <GameBoardCell x={1} y={2}/>
             <GameBoardCell x={2} y={2}/>
+            <StartNewGameModal/>
         </main>
     )
 }
