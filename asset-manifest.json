@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/labyrinth/static/css/main.310ede76.css",
+    "main.js": "/labyrinth/static/js/main.89a906fd.js",
+    "static/media/startIcon.png": "/labyrinth/static/media/startIcon.414f23975f7fcc76ee36.png",
+    "static/media/winIcon.svg": "/labyrinth/static/media/winIcon.652f1268317f46f844ca7ddd2dcaaf8a.svg",
+    "static/media/loseWrongFinishIcon.svg": "/labyrinth/static/media/loseWrongFinishIcon.37e1702264800e917f29fd3b7c62e1cf.svg",
+    "index.html": "/labyrinth/index.html",
+    "static/media/Arrow.svg": "/labyrinth/static/media/Arrow.bfe9fc6d38907f64584a09c587a145dd.svg",
+    "main.310ede76.css.map": "/labyrinth/static/css/main.310ede76.css.map",
+    "main.89a906fd.js.map": "/labyrinth/static/js/main.89a906fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.310ede76.css",
+    "static/js/main.89a906fd.js"
+  ]
+}
