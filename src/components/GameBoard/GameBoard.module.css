@@ -1,0 +1,14 @@
+.gameBoard {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+}
+
+@media (max-width: 400px) {
+    .gameBoard{
+        gap: .5vw;
+        grid-template-columns: repeat(3, 33vw);
+        grid-template-rows: repeat(3, 33vw);
+    }
+}

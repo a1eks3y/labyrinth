@@ -13,6 +13,9 @@ export const generateNewLabyrinth = () => ({
 export const CHOOSE_CELL = 'CHOOSE_CELL'
 
 export const chooseCell = (chosenX, chosenY) => ({
-    chosenX,
-    chosenY
+    type: CHOOSE_CELL,
+    payload: {
+        chosenX,
+        chosenY
+    }
 })

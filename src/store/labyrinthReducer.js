@@ -25,7 +25,7 @@ export const labyrinthReducer = (state = {}, action) => {
                     possibleSteps.push(STEP_RIGHT)
                 if (curY !== 0)
                     possibleSteps.push(STEP_UP)
-                if (curY !== 0)
+                if (curY !== 2)
                     possibleSteps.push(STEP_DOWN)
 
                 const step = possibleSteps[getRandomNumber(possibleSteps.length - 1)]
@@ -37,7 +37,7 @@ export const labyrinthReducer = (state = {}, action) => {
                 if (step === STEP_UP)
                     curY--
                 if (step === STEP_DOWN)
-                    curY--
+                    curY++
 
                 steps.push(step)
             }
