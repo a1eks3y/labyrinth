@@ -1,4 +1,4 @@
-export const getRandomNumber = (max) => Math.floor(Math.random() * (max + 1))
+export const getRandomNumber = (max) => Math.floor(Math.random() * (max + 1)) // number from 0 to max
 
 export const GENERATE_NEW_LABYRINTH = 'GENERATE_NEW_LABYRINTH'
 export const STEP_LEFT = 'LEFT'

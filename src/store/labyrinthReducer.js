@@ -9,7 +9,11 @@ import {
 } from './labyrinthActions'
 
 
-export const labyrinthReducer = (state = {}, action) => {
+const initialState = {
+    steps: [...Array(10)]
+}
+
+export const labyrinthReducer = (state = initialState, action) => {
     switch (action.type) {
         case GENERATE_NEW_LABYRINTH: {
             const startX = getRandomNumber(2)
@@ -17,7 +21,7 @@ export const labyrinthReducer = (state = {}, action) => {
             let curX = startX
             let curY = startY
             const steps = []
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 10; i++) { // make 10 random steps and find finishX, finishY
                 const possibleSteps = []
                 if (curX !== 0)
                     possibleSteps.push(STEP_LEFT)

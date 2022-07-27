@@ -1,0 +1,66 @@
+.inactive_cell {
+    background: #4351C1;
+}
+
+.cell {
+    background: #4351C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-name: show-up;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.animate:first-child {
+    background: #4351C1;
+    animation-duration: 1s;
+    opacity: 1;
+    animation-name: show-up-first-child;
+}
+
+.icon {
+    width: 40px;
+}
+
+@keyframes show-up-first-child {
+    0% {
+        background: red;
+    }
+    99% {
+        background: red;
+    }
+}
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+        background: #4351C1;
+    }
+    1% {
+        opacity: 1;
+    }
+    49% {
+        background: #4351C1;
+    }
+    50% {
+        background: red;
+    }
+    99% {
+        background: red;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 350px) {
+    .icon {
+        width: 13vw;
+    }
+}

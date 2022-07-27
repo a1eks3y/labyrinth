@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './Cell.module.css'
+import s from './GameBoardCell.module.css'
 import {useDispatch, useSelector} from 'react-redux'
 import {chooseCell} from '../../../store/labyrinthActions'
 import startIcon from '../../../images/startIcon.png'
@@ -8,7 +8,7 @@ import loseIcon from '../../../images/loseWrongFinishIcon.svg'
 import loseFinishIcon from '../../../images/loseFinishIcon.png'
 
 
-const Cell = ({x, y}) => {
+const GameBoardCell = ({x, y}) => {
     const dispatch = useDispatch()
     const {startX, startY, isWin, chosenX, chosenY, finishY, finishX} = useSelector(state => state)
     const clickHandler = () => {
@@ -33,4 +33,4 @@ const Cell = ({x, y}) => {
     )
 }
 
-export default Cell
+export default GameBoardCell
